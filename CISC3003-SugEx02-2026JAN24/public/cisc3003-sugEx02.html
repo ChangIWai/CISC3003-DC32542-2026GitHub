@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>My First Website</title>
+        <link rel="stylesheet" type="text/css" href="css/cisc3003-SugEx02.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <img class="header__image" src="images/p6.png" alt="Joey Logo" />
+
+                <nav class="header__nav">
+                    <a class="header__nav-item" data-scroll href="#about">About</a>
+                    <a class="header__nav-item" data-scroll href="#values">Values</a>
+                    <a class="header__nav-item" data-scroll href="#career">Career</a>
+                    <a class="header__nav-item" data-scroll href="#hobbies">Hobbies</a>
+                    <a class="header__nav-item" data-scroll href="#contact">Contact</a>
+                </nav>
+                <a id="btnOpen" class="header__open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </header>
+
+        <aside id="offcanvas" class="offcanvas">
+            <div class="offcanvas__content">
+                <a id="btnClose" class="offcanvas__close">
+                    <span></span>
+                    <span></span>                    
+                </a>
+                <a class="offcanvas__item" data-scroll href="#about">About</a>
+                <a class="offcanvas__item" data-scroll href="#values">Values</a>
+                <a class="offcanvas__item" data-scroll href="#career">Career</a>
+                <a class="offcanvas__item" data-scroll href="#hobbies">Hobbies</a>
+                <a class="offcanvas__item" data-scroll href="#contact">Contact</a>
+            </div>
+        </aside>
+
+        <main>
+            <article>
+
+                <section id="home" class="block -fullwidth">
+                    <div class="overlay"></div>
+                    <div class="block__content text-center">
+                        <h1>JOEY (CHANG I WAI)</h1>
+                        <p class="text-white" style="margin-top:20px; font-size: 30px;">University of Macau | CS Student </p>
+                    </div>
+                </section>
+                
+                <section id="about" class="block__wrapper">
+                    <div class="block">
+                        <div class="block__content -text">
+                            <h2>About Me</h2>
+                            <div class="intro">
+                                <p>I'm Joey, a junior student majoring in Computer Science at the <strong>University of Macau</strong>.</p>
+                                <p>I have a diverse personality. When coding or studying, I tend to be <strong>quiet and focused</strong>, enjoying the process of diving deep into technical details. However, in my daily life, I am <strong>active and energetic</strong>, always eager to meet new people and explore new things.</p>
+                                <p>This balance allows me to stay grounded when solving complex technical problems while maintaining positive communication in team collaborations.</p>
+                            </div>
+                            <div class="grid">
+                                <div class="grid__item" style="background-image:url(images/p1.jpg)"></div>
+                                <div class="grid__item" style="background-image:url(images/p2.jpg)"></div>
+                                <div class="grid__item" style="background-image:url(images/p3.jpg)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="values" class="block__wrapper">
+                    <div class="block">
+                        <div class="block__content -text">
+                            <h2>Values & Traits</h2>
+                            <div class="intro">
+                                My core beliefs that drive me forward in my studies and life.
+                            </div>
+                            
+                            <!-- 三欄並排 + 白色卡片 -->
+                            <div class="grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                                
+                                <div class="grid__item" style="background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); color: #36384c; text-align: left; flex: 1 1 300px;">
+                                    <header style="color: #36384c; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">Attitude</header>
+                                    <div class="grid__content">
+                                        <h3 style="margin-top:0;">Proactive Learning</h3>
+                                        <p>I look beyond textbooks. When facing new technologies, I take the initiative to find answers and enjoy learning through practice.</p>
+                                    </div>
+                                </div> 
+
+                                <div class="grid__item" style="background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); color: #36384c; text-align: left; flex: 1 1 300px;">
+                                    <header style="color: #36384c; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">Trait</header>
+                                    <div class="grid__content">
+                                        <h3 style="margin-top:0;">Dynamic Balance</h3>
+                                        <p>Being quiet allows me to focus on code details, while my active side fosters effective team communication.</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item" style="background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); color: #36384c; text-align: left; flex: 1 1 300px;">
+                                    <header style="color: #36384c; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">Thinking</header>
+                                    <div class="grid__content">
+                                        <h3 style="margin-top:0;">Logical Thinking</h3>
+                                        <p>Whether developing software or playing strategy games, I enjoy finding the "optimal solution." When facing challenges, I prefer to analyze calmly and solve them.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="career" class="block__wrapper">
+                    <div class="block">
+                        <div class="block__content -text">
+                            <h2>Career Aspirations</h2>
+                            <div class="intro">
+                                As a junior student, my current goal is to apply theoretical knowledge to real-world work.
+                            </div>
+                            <div class="grid">
+                                <!-- Short Term 白色卡片 -->
+                                <div class="grid__item" style="background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); color: #36384c; text-align: left;">
+                                    <header style="color: #36384c; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Short Term</header>
+                                    <div class="grid__content">
+                                        <p><strong>Internship Goal:</strong></p>
+                                        <p>I am looking for opportunities in <strong>Web Development</strong> or <strong>Game Development</strong>.</p>
+                                        <p>I hope to improve my technical skills in a real development environment and learn how to collaborate with a team.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Long Term 白色卡片 (新增修改處) -->
+                                <div class="grid__item" style="background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); color: #36384c; text-align: left;">
+                                    <header style="color: #36384c; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">Long Term</header>
+                                    <div class="grid__content">
+                                        <p><strong>Full-Stack Engineer:</strong></p>
+                                        <p>In the future, I aspire to become a Full-Stack Engineer, building products that are stable, user-friendly, and impactful.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hobbies" class="block__wrapper">
+                    <div class="block">
+                        <div class="block__content -text">
+                            <h2>Hobbies</h2>
+                            <div class="grid">
+                                <div class="grid__item">
+                                    <header>Traveling</header>
+
+                                    <div class="grid__image" style="background-image:url(images/p5.jpg)"></div> 
+                                    <div class="grid__content">
+                                        <p>Visiting different places helps me relax. I enjoy experiencing different cultures, which broadens my horizons and gives me new perspectives.</p>
+                                    </div>
+                                </div> 
+                                <div class="grid__item">
+                                    <header>Gaming</header>
+
+                                    <div class="grid__image" style="background-image:url(images/p4.jpg)"></div>
+                                    <div class="grid__content">
+                                        <p>I enjoy gaming, especially titles that require strategy. It’s not just a hobby; it also sparked my interest in software interaction design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section id="contact" class="block__wrapper">
+                    <div class="block">
+                        <div class="block__content -text">
+                            <div class="grid">
+                                <div class="grid__item">
+                                    <header>Information</header>
+                                    <div class="grid__content">
+                                        <p><strong>Student ID:</strong><br> DC32542</p>
+
+                                        <p><strong>Email:</strong><br> 
+                                        <a href="mailto:dc32542@um.edu.mo">dc32542@um.edu.mo</a></p>
+
+                                        <p><strong>GitHub:</strong><br> 
+                                        <a href="https://github.com/Joeychang37" target="_blank">github.com/Joeychang37</a></p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+
+        <footer>
+            &copy; 2023 Joey (Chang I Wai). All Rights Reserved.
+        </footer>
+
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
