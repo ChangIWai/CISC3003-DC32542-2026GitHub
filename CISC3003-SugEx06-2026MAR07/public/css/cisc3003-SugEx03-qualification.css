@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+section {
+    padding: 100px 0;
+}
+
+.section-dark {
+    background-color:#b1dad9;
+    color: #490a07;
+}
+
+.section-beige {
+    background-color: #624d4f;
+    color: #ffffff;
+}
+
+.title-light, .title-dark {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title-light { color: #490a07; }
+.title-dark { color: #ffffff; }
+
+.edu-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-left: 10px solid #1482be;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    color: #1e3a5f;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.badge {
+    background: #1e3a5f;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.edu-card h4 {
+    color: #1482be;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.scholarship {
+    background: #f0f7ff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    color: #1e3a5f;
+    font-size: 1rem;
+    border-left: 3px solid #1482be;
+}
+
+.qual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+}
+
+.item-card {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 20px;
+    color: #333;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.category {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1482be;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eaddca;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.exp-detail {
+    margin-bottom: 30px;
+}
+
+.exp-detail:last-child {
+    margin-bottom: 0;
+}
+
+.exp-detail h4 {
+    color: #1e3a5f;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.org {
+    color: #1482be;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.desc {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cv-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 60px;
+    border-radius: 30px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 50px;
+    background: #ffffff;
+    color: #1e3a5f !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+    background: #1482be;
+    color: #ffffff !important;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.text-center { text-align: center; }
