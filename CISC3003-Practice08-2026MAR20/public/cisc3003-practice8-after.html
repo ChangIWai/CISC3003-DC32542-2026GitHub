@@ -39,11 +39,10 @@
         <div><img src="images/small/painting5.jpg" alt="Milkmaid" title="Johannes Vermeer, c. 1660"></div>
     </div>
 </main>
-
+ 
 <script>
 $(document).ready(function() {
-    
-    // 要求 2 & 3：點擊縮圖更換主圖與說明文字
+
     $('#thumbBox img').click(function() {
         var smallSrc = $(this).attr('src');
         var newSrc = smallSrc.replace('small', 'medium');
@@ -54,7 +53,6 @@ $(document).ready(function() {
         $('#imgManipulated figcaption').html('<em>' + altText + '</em> <br>' + titleText);
     });
 
-    // 要求 4：更新濾鏡函數
     $('.sliders').on('input', function() {
         updateFilters();
     });
@@ -87,7 +85,6 @@ $(document).ready(function() {
         });
     }
 
-    // 要求 1：重置按鈕
     $('#resetFilters').click(function(e) {
         e.preventDefault();
         $('#sliderOpacity').val(100);
