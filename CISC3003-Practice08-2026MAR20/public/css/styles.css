@@ -1,0 +1,104 @@
+main {
+    margin: 30px 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 10pt;
+    display: flex; /* 使用 flex 佈局會比 float 更穩定，但若老師要求用 float 則維持原樣 */
+    align-items: flex-start;
+}
+
+header {
+    background-color: #F5F5F5;
+    margin: 5px 30px;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    font-family: 'Merriweather', "Times New Roman", serif;
+    font-size: 36px;
+    padding: 10px 20px;
+    color: #5D4037;
+    margin: 0;
+}
+
+#sliderBox {
+    margin: 0;
+    border: solid 1px #ccc;
+    padding: 15px;
+    width: 350px; /* 稍微加寬以容納文字和滑桿 */
+    float: left;
+    margin-right: 20px;
+    background-color: white;
+}
+
+#sliderBox label {
+    display: inline-block;
+    width: 90px;
+    font-weight: bold;
+}
+
+.sliders { 
+    width: 180px; 
+    vertical-align: middle;
+}
+
+#imgManipulated {
+    margin: 0;
+    float: left;
+    width: 500px; /* 根據作業圖片調整 */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#imgManipulated img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 5px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#thumbBox {
+    float: left;
+    border: solid 1px #ccc;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+#thumbBox img {
+    width: 80px; /* 縮圖大小 */
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+#thumbBox img:hover {
+    border: 1px solid #EF6C00;
+}
+
+/* 按鈕與背景 */
+button {
+    background-color: #EF6C00;
+    color: white;
+    border: 0;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #D86000;
+}
+
+.tiled {
+    background-color: #eee; /* 備用背景色 */
+    background-image: url(../images/stripes.jpg);
+    background-repeat: repeat;
+}
