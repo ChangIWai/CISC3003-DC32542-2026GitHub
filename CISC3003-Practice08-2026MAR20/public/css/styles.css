@@ -2,7 +2,7 @@ main {
     margin: 30px 30px;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 10pt;
-    display: flex; /* 使用 flex 佈局會比 float 更穩定，但若老師要求用 float 則維持原樣 */
+    display: flex;
     align-items: flex-start;
 }
 
@@ -24,7 +24,7 @@ h1 {
     margin: 0;
     border: solid 1px #ccc;
     padding: 15px;
-    width: 350px; /* 稍微加寬以容納文字和滑桿 */
+    width: 350px;
     float: left;
     margin-right: 20px;
     background-color: white;
@@ -44,7 +44,7 @@ h1 {
 #imgManipulated {
     margin: 0;
     float: left;
-    width: 500px; /* 根據作業圖片調整 */
+    width: 500px;
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
@@ -72,7 +72,7 @@ figcaption {
 }
 
 #thumbBox img {
-    width: 80px; /* 縮圖大小 */
+    width: 80px;
     cursor: pointer;
     display: block;
     margin-bottom: 10px;
@@ -83,7 +83,6 @@ figcaption {
     border: 1px solid #EF6C00;
 }
 
-/* 按鈕與背景 */
 button {
     background-color: #EF6C00;
     color: white;
@@ -98,7 +97,7 @@ button:hover {
 }
 
 .tiled {
-    background-color: #eee; /* 備用背景色 */
+    background-color: #eee;
     background-image: url(../images/stripes.jpg);
     background-repeat: repeat;
 }
