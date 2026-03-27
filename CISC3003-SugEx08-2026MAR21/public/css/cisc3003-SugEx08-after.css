@@ -1,0 +1,172 @@
+/* --- Base Styles (Mobile First) --- */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #D1D1FF;
+    font-family: "Times New Roman", Times, serif;
+    min-width: 500px;
+}
+
+header {
+    background-color: #0066FF;
+    padding: 30px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: block;
+    background-color: white;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px auto;
+    width: 80%;
+    color: blue;
+    font-weight: bold;
+}
+
+section {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.myClass {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid black;
+    /* Small screen: simple block layout */
+}
+
+ol {
+    list-style: upper-roman; 
+    margin-left: 2em;
+}
+
+img {
+    display: none; /* Hidden by default */
+}
+
+footer {
+    clear: both;
+    background-color: #0066FF;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* --- Desktop View (min-width: 900px) --- */
+@media screen and (min-width: 900px) {
+
+	header {
+    background-color: #D1D1FF;
+    padding: 30px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+	}
+
+    header h1::after {
+        content: "(I guess...)";
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    nav a {
+        width: 70%;
+    }
+
+    #left {
+        float: left;
+        width: 30%;
+    }
+
+    #center {
+        float: right;
+        width: 65%;
+    }
+
+    #center .myClass {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        column-gap: 20px;
+    }
+
+    img {
+        display: inline-block;
+        width: 150px;
+        height: auto;
+        margin-top: 15px;
+        margin-right: 15px;
+        border: 1px solid #000;
+    }
+    
+    footer {
+    clear: both;
+    background-color: #D1D1FF;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+	}
+}
+
+/* --- Print View  --- */
+@media print {
+    body, header, footer, section {
+        background-color: white !important;
+        color: black;
+        margin: 0;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.2em !important;
+        text-align: center;
+    }
+
+    header h1::after {
+        content: "";
+    }
+
+    nav a {
+        display: block;
+        border: none;
+        background: none;
+        text-decoration: underline;
+        width: auto;
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    img {
+        display: none !important;
+    }
+
+    .myClass {
+        column-count: 1 !important;
+        border: 1px solid #ccc;
+    }
+
+    footer {
+        background-color: white !important;
+        border-top: 1px solid #000;
+    }
+}
