@@ -14,7 +14,7 @@ if ($selectedCustomerId && isset($customerList[$selectedCustomerId])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CISC3003 Suggested Exercise 10</title>
+    <title>DC32542 Joey Chang I Wai</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -156,6 +156,11 @@ if ($selectedCustomerId && isset($customerList[$selectedCustomerId])) {
                </div>   
             </div>  </section>
     </main>    
+
+    <footer style="padding: 20px; text-align: center;">
+        <p>CISC3003 Web Programming: DC32542 Chang I Wai 2026</p>
+    </footer>
+
 </div>    
 
 <script>
